@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header{
+    background: #766dec;
+    width: 60vw;
+    margin-left:20vw ;
+    margin-top: 1%;
+    position: absolute;
+    z-index: 999999;
+    border-radius: 10px;
+    height: 100px;
+
+}
+
+ .top-bar{
+    width: 30%;
+    height: auto;
+} 
+
+.top-bar-logo{
+    float: left;
+}
+
+.top-bar-logo .left h1{
+    font-size: 3.5em;
+    position: absolute;
+    margin-top: 2%;
+    font-family: 'Akronim', cursive;
+    color: white;
+    letter-spacing: 10px;
+}
+
+
+nav {
+    margin-right: 3%;
+    width: 40%;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 3%;
+}
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+    margin-left: 5%;    
+
+}
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #eea44f;
+    transform: scale(0);
+    transform-origin: 0;
+}
+
+nav ul li a:hover::before{
+    content: '';
+    width: 12%;
+    transition: 2s;
+    transform: scale(1);
+}
