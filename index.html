@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Octahacks</title>
+
+        <!-- meta tags for the charset different browser support and the sco and the website description -->
+        <meta charset="utf-8">
+        
+        <meta name="keywords" content="Octahacks, hackathon chitkara university, coding event summer, 36 hours of code">
+       
+        <meta name="Description" content="Octahacks is a 2 days coding event happen at chitkara university where students uses differnt fields from the given fields and then find a solution to the problems">
+      
+        <meta name="Author" content="Lord Abhay Sharma Himself">
+
+        <meta name="viewport" name="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+
+        <!-- Link the stylesheet -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Baffle js for the text animations -->
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    </head>
+
+ <body>
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-logo">
+                <div class="left">
+                    <h1 id="octahacks-animations" class="data">
+                        Octahacks
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a  href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Schedule</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+    const text = baffle('.data');
+    text.set({
+        characters:'░<▒ ██<░█ █>░█▓ ▓█░ ▒█/▒░ ▒</█ >░/ //▒> █>▓░',
+        speed:120
+    });
+    text.start();
+    text.reveal(2200);
+
+    </script>
+
+    <script src="js/main.js"></script>
+ </body>
+        
+</html>
