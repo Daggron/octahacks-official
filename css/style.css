@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Bad+Script|Fredericka+the+Great|Monoton&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -138,4 +139,46 @@ section{
     height: 100vh;
     object-fit: cover;
     object-position: center;
+}
+
+
+
+.content{
+    position: absolute;
+    width: 50%;
+    top:0;
+    left: 0;
+    height: 100vh;
+}
+
+.Heading-text{
+    min-height: 40%;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    margin-top: 30%;
+}
+
+
+.center-box{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.center-box h1{
+    font-size: 6em;
+    line-height: 2em;
+    font-kerning: normal;
+    font-weight: lighter;
+    color: #ff8800;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Bad Script', cursive; */
+    /* font-family: 'Fredericka the Great', cursive; */
+    width: 100%;
+    letter-spacing: 4px;
+    margin-top: 10%;
 }
