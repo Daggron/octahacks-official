@@ -243,9 +243,10 @@ section{
 .text-details p{
     color: rgb(95, 95, 95);
     font-family: 'Kurale','Raleway','cursive',serif;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-optical-sizing: 2.5em;
-    margin: 5%;
+    margin-top: 10%;
+    margin-left: 5%;
     
 }
 
@@ -266,8 +267,10 @@ section{
 
 
 .Image-alignment img{
-    height: auto;
+    height: 450px;
     width: auto;    
+    margin-left: 10%;
+    object-fit: cover;
 }
 
 .text-headline h2{
@@ -286,4 +289,6 @@ section{
     font-family: 'Kurale','Raleway','cursive',serif;
     font-size: 3em;
     letter-spacing: 12px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
