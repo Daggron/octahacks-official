@@ -24,8 +24,21 @@
         <!-- Link the stylesheet -->
         <link rel="stylesheet" href="./css/style.css">
 
+         <!-- Animation on scroll library  -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Baffle js for the text animations -->
         <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+        <!-- Animation on scroll js framework cdn -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Jquery Cdn Do not remove -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+       
+
+
     </head>
 
  <body>
@@ -72,9 +85,11 @@
                 </div>
                 <div class="content">
                     <div class="Heading-text">
-                        <h1>
-                            Octahacks
-                        </h1>
+                        <div class="center-box">
+                            <h1 class="Branding">
+                               &lt;Octahacks/&gt;
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,18 +97,67 @@
 
     </section>
 
+    <section class="about-page" id="about">
+        <div class="container">
+            <div class="master-box">
+                    <div class="text-headline">
+                            <h1>
+                                What is Octahacks ?
+                            </h1>
+                    </div>
+                <div class="head-box">
+                        
+                        <div class="text-details" data-aos="fade-up">
+                            <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                            </p>
+                        </div>
+                        
+                </div>
+                <div class="Image-box">
+                    <div class="Image-alignment">
+                        <img src="./images/code.png" alt="thinkers and doers">
+                    </div>
+                </div>
+            </div>
+            <div class="foot-text">
+                <div class="text-headline">
+                    <h2>
+                        ......................................................
+                    </h2>
+                    <h3>
+                        Only Constraint Is Time
+                    </h3>
+                </div>
+            </div>  
+
+        </div>
+
+    </section>
+
     <script>
-    const text = baffle('.data');
-    text.set({
+    // const text = baffle('.data');
+    // text.set({
+    //     characters:'░<▒ ██<░█ █>░█▓ ▓█░ ▒█/▒░ ▒</█ >░/ //▒> █>▓░',
+    //     speed:120
+    // });
+    // text.start();
+    // text.reveal(2200);
+
+
+    const data = baffle('.Branding');
+    data.set({
         characters:'░<▒ ██<░█ █>░█▓ ▓█░ ▒█/▒░ ▒</█ >░/ //▒> █>▓░',
         speed:120
     });
-    text.start();
-    text.reveal(2200);
+    data.start();
+    data.reveal(3000);
 
     </script>
 
     <script src="js/main.js"></script>
+  
  </body>
         
 </html>
