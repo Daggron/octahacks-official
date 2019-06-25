@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Bad+Script|Fredericka+the+Great|Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Kurale|Raleway|Monoton&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 header{
@@ -174,11 +175,115 @@ section{
     font-kerning: normal;
     font-weight: lighter;
     color: #ff8800;
-    /* font-family: 'Allerta Stencil', sans-serif; */
+    
     font-family: 'Monoton', cursive;
-    /* font-family: 'Bad Script', cursive; */
-    /* font-family: 'Fredericka the Great', cursive; */
     width: 100%;
     letter-spacing: 4px;
     margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section starts from here */
+
+#about{
+    height: auto;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.master-box{
+    height: auto;
+    width: 100%;
+}
+.head-box{
+    width: 45%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.text-headline{
+    width: 100%;
+    height: auto;
+    text-align: center;
+   
+}
+
+.text-headline h1{
+    font-family: 'Kurale', serif;
+    letter-spacing: 2px;
+    font-display: block;
+     color: #766dec;
+     margin-top: 2%; 
+     font-size: 5rem;
+}
+
+.text-details{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 2%;
+        align-content: center;
+        align-self: auto;
+}
+
+
+.text-details p{
+    color: rgb(95, 95, 95);
+    font-family: 'Kurale','Raleway','cursive',serif;
+    font-size: 2em;
+    font-optical-sizing: 2.5em;
+    margin: 5%;
+    
+}
+
+.Image-box{
+    width: 50%;
+    height: auto;
+    float: right;
+    /* border: 1px solid #766dec; */
+}
+
+.Image-box .Image-alignment{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.Image-alignment img{
+    height: auto;
+    width: auto;    
+}
+
+.text-headline h2{
+    color: #766dec;
+    font-family: 'Monoton', cursive;
+    font-weight: lighter;
+
+    font-size: 3em;
+    letter-spacing: 12px;
+}
+
+
+.text-headline h3{
+    color:   rgb(95, 95, 95);
+    font-weight: lighter;
+    font-family: 'Kurale','Raleway','cursive',serif;
+    font-size: 3em;
+    letter-spacing: 12px;
 }
