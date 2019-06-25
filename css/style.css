@@ -218,6 +218,7 @@ section{
     width: 100%;
     height: auto;
     text-align: center;
+    overflow: hidden;
    
 }
 
@@ -237,6 +238,7 @@ section{
         margin-top: 2%;
         align-content: center;
         align-self: auto;
+       
 }
 
 
@@ -291,4 +293,10 @@ section{
     letter-spacing: 12px;
     letter-spacing: 2px;
     word-spacing: 4px;
+}
+
+
+.foot-text{
+    height: auto;
+    width: 100%;
 }
