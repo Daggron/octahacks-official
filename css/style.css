@@ -90,6 +90,11 @@ nav ul li a:hover::before{
 
 
 
+
+
+
+
+
 /* Here Starts the main section aka the homepage */
 
 section{
@@ -174,7 +179,7 @@ section{
     line-height: 2em;
     font-kerning: normal;
     font-weight: lighter;
-    color: #ff8800;
+    color: rgb(255, 149, 0) ;
     
     font-family: 'Monoton', cursive;
     width: 100%;
@@ -191,16 +196,12 @@ section{
 
 
 
-
-
-
-
 /* About Section starts from here */
 
 #about{
     height: auto;
     width: 100%;
-    background: whitesmoke;
+    background: white;
 }
 
 .master-box{
@@ -218,6 +219,7 @@ section{
     width: 100%;
     height: auto;
     text-align: center;
+    overflow: hidden;
    
 }
 
@@ -237,6 +239,7 @@ section{
         margin-top: 2%;
         align-content: center;
         align-self: auto;
+       
 }
 
 
@@ -291,4 +294,95 @@ section{
     letter-spacing: 12px;
     letter-spacing: 2px;
     word-spacing: 4px;
+}
+
+
+.foot-text{
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+/* Here comes the code-of-conduct */
+
+
+article{
+   
+    height: auto;
+    background: rgb(231, 229, 205);
+    /* #6C39BF D5CAFD 9371D6  #C5B2F4 8183B&*/
+    /* Grey D2D2D2 959492*/
+    /* Pink E8DDDA FeA425 */
+}
+
+
+
+
+.code-of-conduct{
+    height: auto;
+    width: 100vw;
+}
+
+
+.wave{
+    height: 400px;
+    width: 100vw;
+    background: #766dec;
+}
+
+.wave::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../images/logo.png);
+    width: 100vw;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 20%;
+    z-index: 0;
+}
+.Heading-right{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+
+.Image-box-left{
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-top: 4%;
+}
+
+.text-right-headline{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.white{
+    color: white;
+
+}
+
+.center-align-text{
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 3%!important;
+}
+
+
+#F{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Kurale','Raleway','cursive',serif;
+    color: #2c9427;
+}
+
+#master-id{
+    margin-top: 5%;
 }
