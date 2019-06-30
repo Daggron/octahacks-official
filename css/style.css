@@ -339,9 +339,9 @@ article{
     background: url(../images/logo.png);
     width: 100vw;
     height: 200px;
-    object-fit: contain;
     margin-top: 20%;
     z-index: 0;
+    background-size: cover;
 }
 .Heading-right{
     width: 50%;
@@ -386,3 +386,251 @@ article{
 #master-id{
     margin-top: 5%;
 }
+
+
+
+.wrapper {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    
+  }
+  .button{
+    border: none;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 17px 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #3AFFF9, #00B8FF, #00DFFF, #9BF7AD, #6C92E7);
+    background-size: 400% 400%;
+    display: inline-block;
+    transition: all .5s ease;
+    font-family: 'Kurale','Raleway','cursive',serif!important;
+  }
+  .button:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
+    background: -o-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
+    background: -ms-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
+    background: -moz-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
+    background: linear-gradient(315deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
+    border-radius: 5px;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+
+
+  .button:hover{
+    animation: gradient  8s ease infinite;
+    color: #ffffff;
+    box-shadow: 0px 7px 18px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 20%;
+    }
+    50% {
+      background-position: 100% 80%;
+    }
+    100% {
+      background-position: 0% 20%;
+    }
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+  /* Timeline section starts here */ 
+
+   .timeline {
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    background: #7CB9B0;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+  .left-box-timeline{
+      width: 45%;
+      float: left;
+      margin-left: 5%;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    margin-right: -5%;
+  }
+  .timeline-item:nth-child(even) .timeline-content .date {
+    right: auto;
+    left: 0;
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+  .timeline-item::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    margin-left: -3%;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+  }
+  
+  .timeline-img {
+    width: 30px;
+    height: 30px;
+    background: #007670;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    margin-top: 25px;
+    margin-left: -15px;
+  }
+
+  
+  .timeline-card {
+    padding: 0 !important;
+  }
+  .timeline-card p {
+    padding: 0 20px;
+  }
+  .timeline-card a {
+    margin-left: 20px;
+  }
+  
+  .timeline-item:nth-child(2) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1458530970867-aaa3700e966d") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item:nth-child(5) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1444093826349-9ce8c622f4f3") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item:nth-child(6) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1471479917193-f00955256257") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item:nth-child(8) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1466840787022-48e0ec048c8a") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item:nth-child(10) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1447639703758-f525f36456bf") center center no-repeat;
+    background-size: cover;
+  }
+  .timeline-item:nth-child(11) .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1469429978400-082eec725ad5") center center no-repeat;
+    background-size: cover;
+  }
+  
+  .timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .timeline-img-header h2 {
+    color: #363B38;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
+  
+  blockquote {
+    margin-top: 30px;
+    color: #F5F5F5;
+    border-left-color: #007670;
+    padding: 0 20px;
+  }
+  
+  .date {
+    background: #007670;
+    display: inline-block;
+    color: #363B38;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline::before {
+      left: 50px;
+    }
+    .timeline .timeline-img {
+      left: 50px;
+    }
+    .timeline .timeline-content {
+      max-width: 100%;
+      width: auto;
+      margin-left: 70px;
+    }
+    .timeline .timeline-item:nth-child(even) .timeline-content {
+      float: none;
+    }
+    .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #f5f5f5 transparent transparent;
+    }
+  }
+  
