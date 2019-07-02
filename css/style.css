@@ -1,485 +1,507 @@
-@import url('https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Kurale|Raleway|Monoton&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Kurale|Raleway|Monoton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
-html,body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
 }
-
-header{
-    background: #766dec;
-    width: 60vw;
-    margin-left:20vw ;
-    margin-top: 1%;
-    position: absolute;
-    z-index: 999999;
-    border-radius: 10px;
-    height: 100px;
-
+header {
+  background: #766dec;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 1%;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 10px;
+  height: 100px;
 }
-
- .top-bar{
-    width: 30%;
-    height: auto;
-} 
-
-.top-bar-logo{
-    float: left;
+.top-bar {
+  width: 30%;
+  height: auto;
 }
-
-.top-bar-logo .left h1{
-    font-size: 3.5em;
-    position: absolute;
-    margin-top: 2%;
-    font-family: 'Akronim', cursive;
-    color: white;
-    letter-spacing: 10px;
+.top-bar-logo {
+  float: left;
 }
-
-
+.top-bar-logo .left h1 {
+  font-size: 3.5em;
+  position: absolute;
+  margin-top: 2%;
+  font-family: "Akronim", cursive;
+  color: white;
+  letter-spacing: 10px;
+}
 nav {
-    margin-right: 3%;
-    width: 40%;
-    position: absolute;
-    margin-left: 60%;
-    margin-top: 3%;
+  margin-right: 3%;
+  width: 40%;
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 3%;
 }
-nav ul{
+nav ul {
   list-style: none;
 }
-
-nav ul li{
-    display: inline;
-    text-align: center;
-    margin-left: 5%;    
-
+nav ul li {
+  display: inline;
+  text-align: center;
+  margin-left: 5%;
 }
-nav ul li a{
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    font-family: 'Lobster Two', cursive;
-
+nav ul li a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Lobster Two", cursive;
 }
-
-
-nav ul li a::before{
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background: #eea44f;
-    transform: scale(0);
-    transform-origin: 0;
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #eea44f;
+  transform: scale(0);
+  transform-origin: 0;
 }
-
-nav ul li a:hover::before{
-    content: '';
-    width: 12%;
-    transition: 2s;
-    transform: scale(1);
+nav ul li a:hover::before {
+  content: "";
+  width: 12%;
+  transition: 2s;
+  transform: scale(1);
 }
-
-
-
-
-
-
-
-
-
 /* Here Starts the main section aka the homepage */
-
-section{
-    min-height: 100vh;
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden!important;
+section {
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden !important;
 }
-
-.Container{
-    height: auto;
-    width: 100%;
-    overflow-x: hidden;
+.Container {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-.homepage{
-    height: auto;
-    width: 100%;
+.homepage {
+  height: auto;
+  width: 100%;
 }
-
-.Home-logo{
-    position: absolute;
-    top:0;
-    width: 50%;
-    left: 50%;
-    height: 100vh;
-    overflow: hidden;
+.Home-logo {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 50%;
+  height: 100vh;
+  overflow: hidden;
 }
-
-.logo-image{
-    height: auto;
-    width: 100%;
-    align-self: center;
-    margin: 0;
-    padding: 0;
+.logo-image {
+  height: auto;
+  width: 100%;
+  align-self: center;
+  margin: 0;
+  padding: 0;
 }
-
-.Image{
-    height: auto;
-    width: 100%;
-
-    
+.Image {
+  height: auto;
+  width: 100%;
 }
-
-
-.Image img{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
+.Image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
-
-
-
-.content{
-    position: absolute;
-    width: 50%;
-    top:0;
-    left: 0;
-    height: 100vh;
+.content {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
-
-.Heading-text{
-    min-height: 40%;
-    height: auto;
-    width: 100%;
-    align-self: center;
-    align-content: center;
-    margin-top: 30%;
+.Heading-text {
+  min-height: 40%;
+  height: auto;
+  width: 100%;
+  align-self: center;
+  align-content: center;
+  margin-top: 30%;
 }
-
-
-.center-box{
-    height: 100%;
-    width: 100%;
-    text-align: center;
+.center-box {
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
-
-
-.center-box h1{
-    font-size: 6em;
-    line-height: 2em;
-    font-kerning: normal;
-    font-weight: lighter;
-    color: rgb(255, 149, 0) ;
-    
-    font-family: 'Monoton', cursive;
-    width: 100%;
-    letter-spacing: 4px;
-    margin-top: 10%;
+.center-box h1 {
+  font-size: 6em;
+  line-height: 2em;
+  font-kerning: normal;
+  font-weight: lighter;
+  color: rgb(255, 149, 0);
+  font-family: "Monoton", cursive;
+  width: 100%;
+  letter-spacing: 4px;
+  margin-top: 10%;
 }
-
-
-
-
-
-
-
-
-
-
 /* About Section starts from here */
-
-#about{
-    height: auto;
-    width: 100%;
-    background: white;
+#about {
+  height: auto;
+  width: 100%;
+  background: white;
+}
+.master-box {
+  height: auto;
+  width: 100%;
+}
+.head-box {
+  width: 45%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+}
+.text-headline {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.text-headline h1 {
+  font-family: "Kurale", serif;
+  letter-spacing: 2px;
+  font-display: block;
+  color: #766dec;
+  margin-top: 2%;
+  font-size: 5rem;
+}
+.text-details {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2%;
+  align-content: center;
+  align-self: auto;
+}
+.text-details p {
+  color: rgb(95, 95, 95);
+  font-family: "Kurale", "Raleway", "cursive", serif;
+  font-size: 1.5rem;
+  font-optical-sizing: 2.5em;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.Image-box {
+  width: 50%;
+  height: auto;
+  float: right;
+  /* border: 1px solid #766dec; */
+}
+.Image-box .Image-alignment {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.Image-alignment img {
+  height: 450px;
+  width: auto;
+  margin-left: 10%;
+  object-fit: cover;
+}
+.text-headline h2 {
+  color: #766dec;
+  font-family: "Monoton", cursive;
+  font-weight: lighter;
+  font-size: 3em;
+  letter-spacing: 12px;
+}
+.text-headline h3 {
+  color: rgb(95, 95, 95);
+  font-weight: lighter;
+  font-family: "Kurale", "Raleway", "cursive", serif;
+  font-size: 3em;
+  letter-spacing: 12px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+.foot-text {
+  height: auto;
+  width: 100%;
+}
+/* Here comes the code-of-conduct */
+article {
+  height: auto;
+  background: rgb(231, 229, 205);
+  /* #6C39BF D5CAFD 9371D6  #C5B2F4 8183B&*/
+  /* Grey D2D2D2 959492*/
+  /* Pink E8DDDA FeA425 */
+}
+.code-of-conduct {
+  height: auto;
+  width: 100vw;
+}
+.wave {
+  height: 400px;
+  width: 100vw;
+  background: #766dec;
+}
+.wave::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../images/logo.png);
+  width: 100vw;
+  height: 200px;
+  margin-top: 20%;
+  z-index: 0;
+  background-size: cover;
+}
+.Heading-right {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+.Image-box-left {
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-top: 4%;
+}
+.text-right-headline {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+}
+.white {
+  color: white;
+}
+.center-align-text {
+  text-align: center;
+  margin-right: 5%;
+  margin-top: 3% !important;
+}
+#F {
+  text-align: center;
+  font-size: 5em;
+  font-family: "Kurale", "Raleway", "cursive", serif;
+  color: #766dec;
+}
+#master-id {
+  margin-top: 5%;
+}
+.wrapper {
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+.button {
+  border: none;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 17px 30px;
+  margin: 10px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    135deg,
+    #3afff9,
+    #00b8ff,
+    #00dfff,
+    #9bf7ad,
+    #6c92e7
+  );
+  background-size: 400% 400%;
+  display: inline-block;
+  transition: all 0.5s ease;
+  font-family: "Kurale", "Raleway", "cursive", serif !important;
+}
+.button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(76, 181, 255) 0%,
+    rgb(137, 130, 247) 100%
+  );
+  background: -o-linear-gradient(
+    135deg,
+    rgb(76, 181, 255) 0%,
+    rgb(137, 130, 247) 100%
+  );
+  background: -ms-linear-gradient(
+    135deg,
+    rgb(76, 181, 255) 0%,
+    rgb(137, 130, 247) 100%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(76, 181, 255) 0%,
+    rgb(137, 130, 247) 100%
+  );
+  background: linear-gradient(
+    315deg,
+    rgb(76, 181, 255) 0%,
+    rgb(137, 130, 247) 100%
+  );
+  border-radius: 5px;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.button:hover {
+  animation: gradient 8s ease infinite;
+  color: #ffffff;
+  box-shadow: 0px 7px 18px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 20%;
+  }
+  50% {
+    background-position: 100% 80%;
+  }
+  100% {
+    background-position: 0% 20%;
+  }
+}
+/* Timeline section starts here */
+.Full-body-container {
+  height: auto;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+.Full-body-container img {
+  height: auto;
+  width: 100%;
 }
 
-.master-box{
-    height: auto;
-    width: 100%;
-}
-.head-box{
-    width: 45%;
-    height: auto;
-    float: left;
-    overflow: hidden;
+
+.timeline-container{
+    /* background: rgb(230, 226, 226); Perfectly matches with 60.jpg */
+    /* background: #fbc757d4; Perfectly matches with the gif */
+    background: #fbc757d4;
 }
 
-.text-headline{
-    width: 100%;
-    height: auto;
+
+.right-headline{
+    font-size: 5em;
+    font-family: 'Kurale','Raleway','cursive','serif';
     text-align: center;
-    overflow: hidden;
-   
-}
-
-.text-headline h1{
-    font-family: 'Kurale', serif;
-    letter-spacing: 2px;
-    font-display: block;
-     color: #766dec;
-     margin-top: 2%; 
-     font-size: 5rem;
-}
-
-.text-details{
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        margin-top: 2%;
-        align-content: center;
-        align-self: auto;
-       
-}
-
-
-.text-details p{
-    color: rgb(95, 95, 95);
-    font-family: 'Kurale','Raleway','cursive',serif;
-    font-size: 1.5rem;
-    font-optical-sizing: 2.5em;
-    margin-top: 10%;
-    margin-left: 5%;
+    color: #766dec;
     
 }
 
-.Image-box{
-    width: 50%;
-    height: auto;
-    float: right;
-    /* border: 1px solid #766dec; */
+
+.for-gif{
+    height: 200px;
+    width: 100%;
+    margin-left: -20%;
 }
 
-.Image-box .Image-alignment{
+.for-gif img{
     width: 100%;
-    min-height: 400px;
-    height: auto;
-    object-fit: cover;
+    height: 400px;
+    object-fit: contain;
     object-position: center;
 }
 
 
-.Image-alignment img{
-    height: 450px;
-    width: auto;    
-    margin-left: 10%;
-    object-fit: cover;
-}
-
-.text-headline h2{
-    color: #766dec;
-    font-family: 'Monoton', cursive;
-    font-weight: lighter;
-
-    font-size: 3em;
-    letter-spacing: 12px;
-}
-
-
-.text-headline h3{
-    color:   rgb(95, 95, 95);
-    font-weight: lighter;
-    font-family: 'Kurale','Raleway','cursive',serif;
-    font-size: 3em;
-    letter-spacing: 12px;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-}
-
-
-.foot-text{
-    height: auto;
-    width: 100%;
-}
 
 
 
-
-/* Here comes the code-of-conduct */
-
-
-article{
-   
-    height: auto;
-    background: rgb(231, 229, 205);
-    /* #6C39BF D5CAFD 9371D6  #C5B2F4 8183B&*/
-    /* Grey D2D2D2 959492*/
-    /* Pink E8DDDA FeA425 */
-}
-
-
-
-
-.code-of-conduct{
-    height: auto;
-    width: 100vw;
-}
-
-
-.wave{
-    height: 400px;
-    width: 100vw;
-    background: #766dec;
-}
-
-.wave::after{
-    content: '';
-    position: absolute;
-    display: block;
-    background: url(../images/logo.png);
-    width: 100vw;
-    height: 200px;
-    margin-top: 20%;
-    z-index: 0;
-    background-size: cover;
-}
-.Heading-right{
-    width: 50%;
-    height: auto;
-    float: right;
-}
-
-
-.Image-box-left{
-    width: 45%;
-    height: auto;
-    float: left;
-    margin-top: 4%;
-}
-
-.text-right-headline{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 0;
-}
-
-.white{
-    color: white;
-
-}
-
-.center-align-text{
-    text-align: center;
-    margin-right: 5%;
-    margin-top: 3%!important;
-}
-
-
-#F{
-    text-align: center;
-    font-size: 5em;
-    font-family: 'Kurale','Raleway','cursive',serif;
-    color: #2c9427;
-}
-
-#master-id{
-    margin-top: 5%;
-}
-
-
-
-.wrapper {
-    text-align: center;
-    height: auto;
-    width: 100%;
-    
-  }
-  .button{
-    border: none;
-    color: #fff;
-    position: relative;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 100px;
-    text-decoration: none;
-    padding: 17px 30px;
-    margin: 10px;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #3AFFF9, #00B8FF, #00DFFF, #9BF7AD, #6C92E7);
-    background-size: 400% 400%;
-    display: inline-block;
-    transition: all .5s ease;
-    font-family: 'Kurale','Raleway','cursive',serif!important;
-  }
-  .button:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: -webkit-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
-    background: -o-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
-    background: -ms-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
-    background: -moz-linear-gradient(135deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
-    background: linear-gradient(315deg, rgb(76, 181, 255) 0%, rgb(137, 130, 247) 100%);
-    border-radius: 5px;
-    z-index: -1;
-    transition: opacity 0.5s linear;
-    opacity: 0;
-  }
-
-
-  .button:hover{
-    animation: gradient  8s ease infinite;
-    color: #ffffff;
-    box-shadow: 0px 7px 18px 2px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 20%;
-    }
-    50% {
-      background-position: 100% 80%;
-    }
-    100% {
-      background-position: 0% 20%;
-    }
-  }
- 
-
-
-
-
-
-
-
-
-
-
-  /* Timeline section starts here */ 
+.prizes{
+  background: white;
+  height: auto;
+  width: 100vw;
   
-  .Full-body-container{
-      height: auto;
-      width: 100vw;
-      object-fit: cover;
-      object-position: center;
-  }
+}
+.Main-tile{
+  font-size: 7em!important;
+  letter-spacing: 10px!important;
+}
+.Title-image{
+  width: auto;
+  height: auto;
+
+}
+
+.Title-image-box{
+  width: 40vw;
+  height: auto;
+  margin: auto;
+}
+.Title-image-box img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-fit: center;
+}
+
+.Prize-outer-box{
+  width: 70vw;
+  margin: auto;
+  height: auto;
+}
+
+.Prize-outer-box .First-three{
+  width: 100%;
+  height: auto;
+}
+
+.Prize-outer-box  .First-three .Inbox{
+  height: 300px;
+  width: 20%;
+  background: white;
+  float: left;
+  margin: 5%;
+  box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  border:2px solid black;
+  
+}
+
+.Inbox .Front-Face{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+ 
+}
 
 
-  .Full-body-container img{
-      height: auto;
-      width: 100%;
-  }
+.Front-Face h1{
+  font-family: 'Kurale','cursive',sans-serif;
+  font-size: 3em;
+  background: url(../images/12.jpg)-500px;
+  color: rgba(255,255,255,0);
+  -webkit-background-clip: text;
+  margin-top: 10%;
+}
 
 
+.Front-Face p{
+  display: block;
+  align-items: baseline;
+  position: relative;
+  top: 50%;
+  font-size: 2em;
+  color: rgb(83, 83, 83);
+  font-family: 'Kurale','cursive','parry Hotter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-
-
-
-
-
-
+.First-three .Inbox:hover{
+  box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+  transition: 1s;
+}
