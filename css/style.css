@@ -422,10 +422,31 @@ article {
 
 
 .prizes{
-  background: whitesmoke;
+  background: white;
   height: auto;
   width: 100vw;
   
+}
+.Main-tile{
+  font-size: 7em!important;
+  letter-spacing: 10px!important;
+}
+.Title-image{
+  width: auto;
+  height: auto;
+
+}
+
+.Title-image-box{
+  width: 40vw;
+  height: auto;
+  margin: auto;
+}
+.Title-image-box img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-fit: center;
 }
 
 .Prize-outer-box{
@@ -445,7 +466,7 @@ article {
   background: white;
   float: left;
   margin: 5%;
-  box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.2);
   border-radius: 10px;
   border:2px solid black;
   
