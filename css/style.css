@@ -49,6 +49,14 @@ header {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+    background: #766dec;
+    width: 65vw;
+    margin-left: 20vw;
+    margin-top: 1%;
+    position: absolute;
+    z-index: 999999;
+    border-radius: 10px;
+    height: 100px;
 }
 
 
