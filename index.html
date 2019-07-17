@@ -18,7 +18,7 @@
 
     <meta name="Author" content="Lord Abhay Sharma Himself" />
 
-    <meta name="viewport" name="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 
@@ -26,7 +26,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-    <script src="https://kit.fontawesome.com/767c45371a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Link the stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -43,11 +43,9 @@
     <!-- Jquery Cdn Do not remove -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <!-- Script for timeline effects -->
-    <!-- <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-     <!--Bootstrap-->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
    
   </head>
@@ -86,6 +84,7 @@
     <section id="Homepage">
       <div class="Container">
         <div class="homepage">
+          <div id="particles-js"></div>
           <div class="Home-logo">
             <div class="logo-image">
               <div class="Image">
@@ -94,6 +93,7 @@
             </div>
           </div>
           <div class="content">
+
             <div class="Heading-text">
 
               <div class="Image-logo">
@@ -105,7 +105,7 @@
                   &lt;Octahacks/&gt;
                 </h1>
                 <p class="icon">
-                  <i class="fas fa-calendar"></i>
+                  <i class="fa fa-calendar-o"></i>
                   <br>
                   <strong>
                     21 Aug
@@ -113,7 +113,7 @@
                   <br>
 
 
-                  <i class="fas fa-map-marker"></i>
+                  <i class="fa fa-map-marker"></i>
                   <br>
                   <strong>
                     Chitkara University
@@ -154,8 +154,8 @@
               </p>
             </div>
           </div>
-          <div class="Image-box">
-            <div class="Image-alignment">
+          <div class="Image-box" id="scene1">
+            <div class="Image-alignment" data-depth="1">
               <img src="./manav/s1.jpg" alt="thinkers and doers" />
             </div>
           </div>
@@ -172,6 +172,70 @@
         </div>
       </div>
     </section>
+
+    <article>
+      <div class="container">
+          <div class="track-container">
+            <div class="tracks-box">
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                    Artificial Intelligence
+                    
+                </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Block Chain
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/avento.gif">
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+              <div class="tracks">
+                <img src="./images/ai.png">
+                <p class="caption">
+                  Artificial Intelligence
+              </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+
+
+
     <article class="code-of-conduct">
       <div class="container">
         <div class="wave"></div>
@@ -193,9 +257,9 @@
             </div>
           </div>
 
-            <div class="Image-box-left">
-              <div class="Image-alignment">
-                <img src="./images/privacy.jpg" alt="thinkers and doers" />
+            <div class="Image-box-left" id="scene">
+              <div class="Image-alignment" data-depth="1">
+                <img src="./images/dhushfinal2.jpg" alt="thinkers and doers" />
               </div>
             </div>
 
@@ -457,6 +521,12 @@
     data.start();
     data.reveal(3000);
   </script>
-  <script></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    var scene1 = document.getElementById('scene1');
+    var parallax1 = new Parallax(scene1);
+  </script>
   <script src="js/main.js"></script>
 </html>

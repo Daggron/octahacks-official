@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Akronim|Lobster+Two&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Kurale|Raleway|Monoton&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Kurale|Raleway|Monoton&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 
 
 header {
-    background: #766dec;
+    background: #8166cd;
     width: 60vw;
     margin-left: 20vw;
     margin-top: 1%;
@@ -115,7 +115,7 @@ section {
     /* min-height: 100vh; */
     height: auto;
     width: 100vw;
-    overflow-x: hidden !important;
+
 }
 .Container {
     height: auto;
@@ -124,6 +124,7 @@ section {
 }
 #Homepage{
     height: 100vh;
+
 }
 .homepage {
     height: auto;
@@ -210,9 +211,108 @@ section {
 
 }
 
+@media all and (max-width: 1400px ){
+    .Container {
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #Homepage{
+        height: 100vh;
+    }
+    .homepage {
+        height: auto;
+        width: 100vw;
+    }
+    .Home-logo {
+
+        width: 50%;
+        float: right;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .logo-image {
+        height: auto;
+        width: 100%;
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+    }
+    .Image {
+        height: auto;
+        width: 100%;
+    }
+    .Image img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .content {
+        position: relative;
+        width: 48%;
+        top: 0;
+        left: 0;
+        float: left;
+        height: 100vh;
+        overflow:hidden;
+    }
+    .Heading-text {
+        height: auto;
+        width: 100%;
+        align-self: center;
+        align-content: center;
+        /* margin-top: 30%; */
+    }
+    .center-box {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .center-box h1 {
+        font-size: 3em;
+        line-height: 2em;
+        font-kerning: normal;
+        font-weight: lighter;
+        color: rgb(255, 149, 0);
+        font-family: "Monoton", cursive;
+        width: 100%;
+        letter-spacing: 4px;
+
+    }
 
 
-@media all and (max-device-width: 1250px){
+
+    .Image-logo{
+        width: 50%;
+        height: 350px;
+        overflow: hidden;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        margin-bottom: 0;
+        position: relative;
+
+
+
+    }
+
+    .Image-logo img{
+        width: 80%;
+        height: 350px;
+
+    }
+
+    .icon{
+        font-size: 20px!important;
+    }
+
+}
+
+@media all and (max-width: 1350px){
 
 
     .content{
@@ -228,17 +328,20 @@ section {
     }
 
     .Image-logo{
-        height: 50vh;
+        height: 30vh;
         width: 80%;
         margin: auto;
+
+        margin-top: 10%;
     }
     .Image-logo img{
         width: 100%;
-        height: 50vh!important;
+        height: 30vh!important;
+        object-fit: contain;
     }
 
     .center-box {
-        margin-top:10%;
+        margin-top:5%;
 
     }
 
@@ -246,10 +349,14 @@ section {
 
 }
 
+@media all and (max-width: 1050px) {
+    .content h1{
+        font-size: 2em;
+    }
+}
 
 
-
-@media all and (max-device-width: 550px){
+@media all and (max-width: 550px){
     .Home-logo{
         width: 0;
         position: relative;
@@ -258,7 +365,8 @@ section {
         z-index: -1;
     }
     #Homepage{
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
     }
 
     .Image img{
@@ -275,23 +383,41 @@ section {
     }
 
     .Image-logo{
-        height: 50vh;
+        height: 70vh;
         width: 80%;
         margin: auto;
     }
     .Image-logo img{
         width: 100%;
-        height: 50vh;
+        height: 70vh!important;
     }
 
     .center-box {
-        margin-top:10%;
+        margin-top: -10%;
+        height: auto;
+        overflow: scroll;
 
     }
-
+    
 
 }
 
+@media all and (max-width:370px){
+    .Image-logo{
+        height: 50vh;
+    }
+    .Image-logo img{
+        width: 100%;
+        height: 50vh!important;
+        
+    }
+
+    .center-box{
+        margin: 0;
+    }
+
+    
+}
 
 
 /* About Section starts from here */
@@ -315,14 +441,26 @@ section {
     height: auto;
     text-align: center;
     overflow: hidden;
+
 }
 .text-headline h1 {
     font-family: "Kurale", serif;
     letter-spacing: 2px;
     font-display: block;
-    color: #766dec;
-    margin-top: 2%;
+    color: #8166cd;
+    margin-top: 10%;
     font-size: 5rem;
+}
+
+@media all and (max-width:550px){
+    .text-headline h1 {
+        font-family: "Kurale", serif;
+        letter-spacing: 2px;
+        font-display: block;
+        color: #8166cd;
+        margin-top: 20%;
+        font-size: 3rem;
+    } 
 }
 .text-details {
     height: auto;
@@ -340,10 +478,11 @@ section {
     margin-left: 5%;
 }
 .Image-box {
-    width: 50%;
+    width: 50%; 
     height: auto;
     float: right;
-    /* border: 1px solid #766dec; */
+    /* border: 1px solid #8166cd; */
+    overflow: hidden;
 }
 .Image-box .Image-alignment {
     width: 100%;
@@ -359,7 +498,7 @@ section {
     object-fit: cover;
 }
 .text-headline h2 {
-    color: #766dec;
+    color: #8166cd;
     font-family: "Monoton", cursive;
     font-weight: lighter;
     font-size: 3em;
@@ -380,7 +519,7 @@ section {
 }
 
 
-@media all and (max-device-width: 1300px){
+@media all and (max-width: 1300px){
 
 
 
@@ -407,7 +546,7 @@ section {
 
 
 
-@media all and (max-device-width: 550px){
+@media all and (max-width: 550px){
 
     .head-box{
         width: 100%;
@@ -419,7 +558,6 @@ section {
 
     .Image-alignment img {
         height: 450px;
-        width: auto;
         margin-left: 0%;
         object-fit: cover;
     }
@@ -438,21 +576,23 @@ section {
 
 
 /* Here comes the code-of-conduct */
-article {
-    height: auto;
-    background: rgb(231, 229, 205);
+article{
+    /*background: rgb(231, 229, 205);*/
     /* #6C39BF D5CAFD 9371D6  #C5B2F4 8183B&*/
     /* Grey D2D2D2 959492*/
     /* Pink E8DDDA FeA425 */
+    height: auto;
+
 }
 .code-of-conduct {
     height: auto;
     width: 100vw;
+    background: #e3e3e3;
 }
 .wave {
     height: 200px;
     width: 100vw;
-    background: #766dec;
+    background: #8166cd;
 }
 .wave::after {
     content: "";
@@ -475,6 +615,7 @@ article {
     height: auto;
     float: left;
     margin-top: 4%;
+    overflow: hidden;
 }
 .text-right-headline {
     width: 100%;
@@ -494,7 +635,7 @@ article {
     text-align: center;
     font-size: 5em;
     font-family: "Kurale", "Raleway", "cursive", serif;
-    color: #766dec;
+    color: #8166cd;
 }
 #master-id {
     margin-top: 5%;
@@ -588,7 +729,7 @@ article {
 
 
 
-@media all  and (max-device-width: 550px){
+@media all  and (max-width: 550px){
 
     .Image-box-left{
         width: 100%;
@@ -652,7 +793,7 @@ article {
     font-size: 5em;
     font-family: 'Kurale','Raleway','cursive','serif';
     text-align: center;
-    color: #766dec;
+    color: #8166cd;
 
 }
 
@@ -793,7 +934,7 @@ article {
 
 
 
-@media all and (max-device-width: 1250px) {
+@media all and (max-width: 1250px) {
 
     .Title-image-box{
         width: 50%;
@@ -869,22 +1010,30 @@ article {
 
 
 
-@media all and (max-device-width: 550px) {
+@media all and (max-width: 550px) {
 
     .Title-image-box{
-        width: 50%;
+        width: 100vw;
     }
 
     .Title-image-box img{
         width: 100%;
         height: 400px;
-        object-fit: cover;
+        margin: auto;
+        object-fit: contain;
 
     }
 
+    .Prize-outer-box{
+        width:100vw;
+        margin: 0;
+        
+    }
+
     .Prize-outer-box .First-three{
-        width: 50%;
-        margin: auto;
+        width: 90%;
+        margin: 0;
+        float: left;
 
     }
 
@@ -903,19 +1052,34 @@ article {
 
     .Next-Two{
         width: 90%;
-        margin: auto;
+        margin: 0;
+    }
+
+    .Prize-second-box{
+        width:100vw;
+        margin: 0;
     }
 
     .Next-Two .Inbox{
         height: 300px;
-        width: 80%;
+        width: 90%;
         float: left;
         background: white;
         border: 2px solid black;
         border-radius: 10px;
         margin: 5%;
+        margin-top: 5%;
         box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.25);
         transition: 1s;
+    }   
+
+    .First-three #third{
+        margin-left: 5%;
+        float: left;
+    }
+
+    .Head-bar h1{
+        font-size: 2em;    
     }
 
 
@@ -940,8 +1104,9 @@ article {
 .Head-bar{
     height: 400px;
     width: 100vw;
-    background: linear-gradient(54deg, #9164ff, #8bfff4);
+    /*background: linear-gradient(54deg, #9164ff, #8bfff4);*/
     overflow: hidden;
+    background: #8166cd;
 
 }
 
@@ -1056,3 +1221,117 @@ article {
 
 /* Fucking responsive done  */
 
+#particles-js{
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+}
+
+
+
+.track-container{
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    background: whitesmoke;
+}
+
+.tracks-box{
+    width:80vw;
+    height: auto;
+    margin: auto;
+    
+}
+
+.tracks{
+    width: 25%;
+    height: 300px;
+    border: 2px solid #000;
+    float: left;
+    overflow: hidden;
+    transition: 1s;
+    margin: 3%;
+    border-radius: 20px;
+}   
+
+.tracks img{
+    height: 300px;
+    width: 100%;
+    background: #000;
+    border-radius: 10px;
+}
+
+
+.caption{
+    text-align: center;
+    font-size: 20px;
+    background: #000;
+    opacity: 0.7;
+    height: 100px;
+    transition: 1s;
+    opacity: 1;
+}
+
+.tracks:hover .caption{
+    color: white;
+    transform: translateY(-100px);
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+  
+}
+
+
+
+.tracks:hover{
+    background: #000;
+    opacity: 0.7;
+    transition: 1s;
+}
+@media all and (max-width:1250px){
+   
+    .Head-bar h1{
+        font-size: 5rem;
+    }
+
+    .brochure{
+        width: 100vw;
+        height: 150px;
+        overflow: hidden;
+    }
+
+
+}
+
+@media all and (max-width:900px){
+
+
+.text-details p {
+    font-size: 1em;
+}
+}
+
+@media all and (max-width:550px){
+    .track-container{
+        width: 100vw;
+
+    }
+    .Head-bar h1{
+        font-size: 3rem;
+    }
+
+    .brochure{
+        width: 100vw;
+        line-height: 1em;
+    }
+
+    .tracks {
+        width: auto;
+    }
+    .Image-alignment img {
+        margin: 0;
+        object-fit: contain;
+    }
+}
