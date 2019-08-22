@@ -1458,6 +1458,7 @@ article{
     
   }
 
+
  
   @keyframes slideshow {
     0% {transform: translateX(0);
@@ -1467,6 +1468,47 @@ article{
         transition: 2s;
     }
   }
+
+@media screen and (max-width: 550px) {
+    .wrapper-new {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    .slider {
+        width: 100vw;
+        height: 500px;
+        position: relative;
+        background: white;
+        box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+        display: flex;
+        overflow: hidden;
+    }
+    .slide {
+        height: auto;
+        width: 100vw!important;
+        display: flex;
+        align-items: center;
+        transition: 1s;
+        animation: slideshow 7s linear infinite;
+        -webkit-animation: slideshow 7s linear infinite;
+        flex-grow: 5;
+    }
+    .slide img {
+        height: 400px!important;
+        width: 90%!important;
+        margin-left: 5%;
+        object-fit: contain;
+        transition: 2s;
+
+
+    }
+
+}
  
   /* .slider::before, .slider::after {
     height: 100px;
@@ -1485,3 +1527,73 @@ article{
     top:0;
     transform: rotateZ(180deg);
   } */
+
+
+@media screen and (max-width: 450px){
+
+
+    /*.Container{*/
+    /*    overflow: hidden;*/
+    /*}*/
+    /*.Image-logo{*/
+    /*    overflow: hidden!important;*/
+    /*    margin-top: 0%;*/
+    /*}*/
+    /*.Image-logo img {*/
+    /*    width: 100%;*/
+    /*    margin-top: -10%;*/
+    /*    overflow: hidden;*/
+    /*}*/
+    .button {
+        border: none;
+        color: #fff;
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 100px;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        text-transform: uppercase;
+        background: linear-gradient(
+                135deg,
+                #3afff9,
+                #00b8ff,
+                #00dfff,
+                #9bf7ad,
+                #6c92e7
+        );
+        background-size: 400% 400%;
+        display: inline-block;
+        transition: all 0.5s ease;
+        font-family: "Kurale", "Raleway", "cursive", serif !important;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .center-box {
+        margin-top: -20%;
+        height: auto;
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #8166cd;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+}
