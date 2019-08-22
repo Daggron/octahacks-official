@@ -1436,7 +1436,6 @@ article{
     height: 300px;
     position: relative;
     background: white;
-    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
     display: flex;
     overflow: hidden;
   }
@@ -1484,7 +1483,7 @@ article{
         height: 500px;
         position: relative;
         background: white;
-        box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+       
         display: flex;
         overflow: hidden;
     }
@@ -1571,7 +1570,7 @@ article{
         margin-top: 5%;
     }
     .center-box {
-        margin-top: -20%;
+        margin-top: -25%;
         height: auto;
         overflow: scroll;
     }
